@@ -18,7 +18,7 @@ if liczba_losowa == 0:
     wybór_komputera = 'kamień'
 elif liczba_losowa == 1:
     wybór_komputera = 'papier'
-else:
+elif liczba_losowa == 2:
     wybór_komputera = 'nożyce'
 
 #Pobież wybór użytkownika przy użyciu prostej instrukcji. 
