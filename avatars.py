@@ -1,28 +1,17 @@
-hair_style = input("what hair color? [brown]")
-if hair_style == '':
-    hair_style = 'brown'
-print('You choose: hair_style')
-lenght_hair = input("what is the length of the hair [short]? ")
-if lenght_hair == '':
-    lenght_hair = 'short'
-print('You choose', lenght_hair)
 
-eyes = input("What is the eyes colour [blue]? ")
-if eyes == '':
-    eyes = 'blue'
-print('You choose:', eyes)
-gender = input("What gender [woman]")
-if gender == '':
-    gender = 'woman'
-print('You choose', gender)
+# How to download the type of avatar's code? 
 
-glasses = input("glasses [no]?")
-if glasses == '':
-    glasses = 'no'
-print('You choose:', glasses)
+def download_type(question, defaul):
+    request = question + ' [' + defaul + ']? '
+    answer = input(request)
+    if (answer == ''):
+        answer = defaul
+    print('You choose:', answer)
+    return answer
 
-beard = input("Beard [no]? ")
-if beard == '':
-    beard = 'no'
-print('You choose:', beard)
-
+hair_style = download_type('what is the hair color', 'brown')
+lenght_hair = download_type('what is the length of the hair', 'short')
+eyes = download_type('what is the eyes colour', 'blue')
+gender = download_type('What is the gender', 'woman')
+glasses = download_type('glasses', 'no')
+beard = download_type('beard', 'no')
