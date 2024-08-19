@@ -1,19 +1,14 @@
-dog_name = "Neli"
-dog_weight = 3
-if dog_weight > 10:
-    print(dog_name, 'Wof, Wof')
+print('Prepare the dogs')
+    
+def barking(dog_name, weight):
+    if weight > 10:
+        print(dog_name, 'Wof, wof')
+    else:
+        print(dog_name, 'Wof, Wof')
 
-dog_name = "Tokio"
-dog_weight = 2
-if dog_weight > 10:
-    print(dog_name, 'Wof, Wof')
+barking("Tokio", 2)
+barking("Neli", 3)
+barking("Jessie", 8)
+barking("Rex", 15)
 
-dog_name = "Jessie"
-dog_weight = 8
-if dog_weight > 10:
-    print(dog_name, 'Wof, Wof' )
-
-dog_name = "Rex"
-dog_weight = 6
-if dog_weight > 10:
-    print(dog_name, 'Wof, Wof')
+print("ok, that's enought")
