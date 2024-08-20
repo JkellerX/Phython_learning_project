@@ -15,3 +15,5 @@ eyes = download_type('what is the eyes colour', 'blue')
 gender = download_type('What is the gender', 'woman')
 glasses = download_type('glasses', 'no')
 beard = download_type('beard', 'no')
+
+# This is the REFACTORING code - it's just more simple and readable. 
