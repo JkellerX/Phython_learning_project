@@ -1,10 +1,11 @@
-#There is something wrong... 
+#Here's a corrected version of the code without recursion
 
 def drink_me(param):
-    info = param + ' glass'
+    info = 'This is ' + param + ' glass'
     print(info)
     param = 'empty'
+    print('glass is', param)
 
-    glass = 'full'
-    drink_me(glass)
-    print('glass is', glass)
+glass = 'full'
+drink_me(glass)
+
