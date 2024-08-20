@@ -43,3 +43,18 @@ for i in range(length):
 
 print('Sample with the highest score and the highest production costs have number',
       most_cost_effective, 'and cost', costs[most_cost_effective]) 
+
+#Using sorting for the 5 best samples (creating pseudo code)
+
+def samples_sorting(list):
+    change=True
+    while change:
+        change=False
+        for i in range(0, len(results)-1):
+            if list[i] > list[i+1]:
+                temporary = results[i]
+                results[i] = results[i+1]
+                results[i+1] = temporary
+                change = True
+        
+
