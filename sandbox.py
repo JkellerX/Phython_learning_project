@@ -7,6 +7,18 @@ def policz_zdania(tekst):
             liczba = liczba + 1
     return liczba
 
+def policz_sylaby(slowa):
+    liczba = 0
+    for slowo in slowa:
+        liczba_slow = policz_sylaby_w_slowie(slowo)
+        liczba = liczba + liczba_slow
+    return liczba
+
+def policz_sylaby_w_słowe(slowo):
+    liczba = 0
+    
+    return liczba 
+
 def oblicz_czytelnosc(tekst):
     liczba_slow = 0
     liczba_zdan = 0

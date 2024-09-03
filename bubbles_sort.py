@@ -23,9 +23,12 @@ results = [60, 50, 60, 58, 54, 54,
            46, 31, 57, 52, 44, 18,
            41, 51, 55, 61, 51, 44]
 
-samples_sorting(results, items)
-print(results, items)
+samples_sorting(results, coctails)
+print(results, coctails)
 
+coctails = ['coconut', 'strawberry', 'banana', 'pineapple']
+samples_sorting(coctails)
+print(coctails)
 
 #generating raport with the best 5 samples
 
