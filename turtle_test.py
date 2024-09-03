@@ -10,8 +10,14 @@ def narysuj_kwadrat(zolw):
     for i in range(0, 4):
         zolw.forward(100)
         zolw.right(90)
-narysuj_kwadrat(powolniak)
-maruda.right(45)
+
+def narusuj_spirale(zolw):
+    for i in range(0, 36):
+        narysuj_kwadrat(zolw)
+        zolw.right(10)
+
+narusuj_spirale(powolniak)
+maruda.right(5)
 narysuj_kwadrat(maruda)
 
 turtle.mainloop()
