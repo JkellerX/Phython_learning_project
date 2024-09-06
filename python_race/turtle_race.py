@@ -22,5 +22,22 @@ def ustawienia():
         nowy_zolw.color(zolw_kolor[i])
         nowy_zolw.pendown()
         zolwie.append(nowy_zolw)
+
+def wyscig():
+    global zolwie
+    zwyciezca = False
+    meta = 590
+    while not zwyciezca:
+        for biezacy_zolw in zolwie:
+            ruch = random.randint(0, 2)
+            biezacy_zolw.forward(ruch)
+
+            xcor = biezacy_zolw.xcor()
+            if (xcor >= meta):
+                zwyciezca = True
+                kolor_zwyciezcy = biezacy_zolw.color()
+                print('Zwyciezca jest zolw', kolor_zwyciezcy[0])
+
 ustawienia()
+wyscig()
 turtle.mainloop()
