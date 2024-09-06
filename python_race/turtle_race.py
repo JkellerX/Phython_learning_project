@@ -3,6 +3,11 @@ import random
 
 zolwie = list()
 
+class SuperZolw(turtle.Turtle):                 #niedozwolony doping 
+    def forward(self, odleglosc):
+        oszukana_odleglosc = odleglosc + 5
+        turtle.Turtle.forward(self, oszukana_odleglosc)
+
 def ustawienia():
     global zolwie
     start = -620
@@ -13,6 +18,12 @@ def ustawienia():
 
     zolw_pion = [-40, -20, 0, 20, 40]
     zolw_kolor = ['blue', 'red', 'purple', 'brown', 'gray']
+
+    for i in range(0, len(zolw_pion)):  #niedozwolony doping
+        if i == 4:
+            nowy_zolw = SuperZolw()
+        else:
+            nowy_zolw = turtle.Turtle()
 
     for i in range(0, len(zolw_pion)):
         nowy_zolw = turtle.Turtle()
